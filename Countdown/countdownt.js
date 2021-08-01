@@ -8,7 +8,7 @@ function countdown(){
     const currentDate = new Date();
 
 
-
+// expression
     const TotalSeconds = (newYearsDate - currentDate) / 1000;
     const days = Math.floor(TotalSeconds/ 3600 /24 );
     const hours= (Math.floor(TotalSeconds/3600 ) % 24 );
@@ -17,6 +17,7 @@ function countdown(){
    
 
     console.log(days , hours, mins, seconds)
+    // put out HTML
     daysEl.innerHTML=days
     hoursEl.innerHTML=hours
     minsEl.innerHTML=mins
@@ -26,7 +27,5 @@ function fomatTime(time){
     return time <10 ? `0${time}` :time;
 }
 countdown();
-
-
  setInterval(countdown, 1000);
  
